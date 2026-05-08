@@ -594,7 +594,7 @@ function Contact() {
         <div className="reveal">
           <span className="text-sm font-bold uppercase tracking-wider text-primary">Get In Touch</span>
           <h2 className="mt-3 text-3xl font-extrabold text-foreground md:text-4xl">
-            Book Today — Get Rid of Pests
+            Book Today — <span className="text-destructive">Get Rid of Pests</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
             Fill the form below and we'll connect on WhatsApp instantly. Or call us directly for
