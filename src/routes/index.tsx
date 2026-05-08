@@ -13,13 +13,13 @@ import { FloatingActions } from "@/components/site/FloatingActions";
 import { useReveal } from "@/components/site/useReveal";
 import { PHONE_PRIMARY, PHONE_SECONDARY, telLink, waLink, WHATSAPP } from "@/components/site/contact";
 
-import hero from "@/assets/hero.jpg";
-import imgCockroach from "@/assets/cockroach.jpg";
-import imgTermite from "@/assets/termite.jpg";
-import imgRat from "@/assets/rat.jpg";
-import imgMosquito from "@/assets/mosquito.jpg";
-import imgAnt from "@/assets/ant.jpg";
-import imgBedbug from "@/assets/bedbug.jpg";
+import hero from "@/assets/hero.webp";
+import imgCockroach from "@/assets/cockroach.webp";
+import imgTermite from "@/assets/termite.webp";
+import imgRat from "@/assets/rat.webp";
+import imgMosquito from "@/assets/mosquito.webp";
+import imgAnt from "@/assets/ant.webp";
+import imgBedbug from "@/assets/bedbug.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
