@@ -210,7 +210,7 @@ function About() {
         <div className="reveal">
           <span className="text-sm font-bold uppercase tracking-wider text-primary">About Us</span>
           <h2 className="mt-3 text-3xl font-extrabold text-foreground md:text-4xl">
-            Vizianagaram's most trusted name in <span className="text-gradient">pest control</span>
+            Vizianagaram's most <span className="text-destructive">trusted</span> name in <span className="text-gradient">pest control</span>
           </h2>
           <p className="mt-5 text-base text-muted-foreground">
             For over 15 years, National Pest Control of India has protected homes, offices and
