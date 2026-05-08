@@ -494,7 +494,7 @@ function Testimonials() {
 
 /* ───────── Areas ───────── */
 function Areas() {
-  const areas = ["Vizianagaram", "Secunderabad", "Banjara Hills", "Jubilee Hills", "Gachibowli", "Madhapur", "Kondapur", "Hi-Tech City", "Kukatpally", "Miyapur", "LB Nagar", "Uppal"];
+  const areas = ["Vizianagaram", "Bobbili", "Parvathipuram", "Salur", "Cheepurupalli", "Gajapathinagaram", "Nellimarla", "Srikakulam", "Visakhapatnam", "Anakapalle", "Vizag", "Kothavalasa"];
   const types = ["Residential", "Commercial", "Offices", "Apartments", "Restaurants", "Hospitals"];
   return (
     <section id="areas" className="relative overflow-hidden py-20 md:py-28">
