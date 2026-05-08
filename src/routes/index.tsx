@@ -13,24 +13,24 @@ import { FloatingActions } from "@/components/site/FloatingActions";
 import { useReveal } from "@/components/site/useReveal";
 import { PHONE_PRIMARY, PHONE_SECONDARY, telLink, waLink, WHATSAPP } from "@/components/site/contact";
 
-import hero from "@/assets/hero.jpg";
-import imgCockroach from "@/assets/cockroach.jpg";
-import imgTermite from "@/assets/termite.jpg";
-import imgRat from "@/assets/rat.jpg";
-import imgMosquito from "@/assets/mosquito.jpg";
-import imgAnt from "@/assets/ant.jpg";
-import imgBedbug from "@/assets/bedbug.jpg";
+import hero from "@/assets/hero.webp";
+import imgCockroach from "@/assets/cockroach.webp";
+import imgTermite from "@/assets/termite.webp";
+import imgRat from "@/assets/rat.webp";
+import imgMosquito from "@/assets/mosquito.webp";
+import imgAnt from "@/assets/ant.webp";
+import imgBedbug from "@/assets/bedbug.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "National Pest Control of India | Gov't Approved Pest Control Hyderabad" },
+      { title: "National Pest Control of India | Gov't Approved Pest Control Vizianagaram" },
       {
         name: "description",
         content:
-          "Gov't approved pest control in Hyderabad. Safe, no-smell treatment for cockroach, termite, rat, mosquito, ant & bed bug. Same-day service. Long-term warranty.",
+          "Gov't approved pest control in Vizianagaram. Safe, no-smell treatment for cockroach, termite, rat, mosquito, ant & bed bug. Same-day service. Long-term warranty.",
       },
-      { property: "og:title", content: "National Pest Control of India — Hyderabad" },
+      { property: "og:title", content: "National Pest Control of India — Vizianagaram" },
       {
         property: "og:description",
         content:
@@ -41,7 +41,7 @@ export const Route = createFileRoute("/")({
       {
         name: "keywords",
         content:
-          "pest control Hyderabad, termite treatment Hyderabad, cockroach control, residential pest control, commercial pest control, best pest control near me",
+          "pest control Vizianagaram, termite treatment Vizianagaram, cockroach control, residential pest control, commercial pest control, best pest control near me",
       },
     ],
     scripts: [
@@ -53,8 +53,8 @@ export const Route = createFileRoute("/")({
           name: "National Pest Control of India",
           image: "https://example.com/og.jpg",
           telephone: ["+91" + PHONE_PRIMARY, "+91" + PHONE_SECONDARY],
-          areaServed: "Hyderabad",
-          address: { "@type": "PostalAddress", addressLocality: "Hyderabad", addressCountry: "IN" },
+          areaServed: "Vizianagaram",
+          address: { "@type": "PostalAddress", addressLocality: "Vizianagaram", addressCountry: "IN" },
           priceRange: "₹₹",
           aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "1280" },
         }),
@@ -118,11 +118,11 @@ function Hero() {
             <ShieldCheck className="h-3.5 w-3.5" /> Gov't Approved · ISO Certified
           </div>
           <h1 className="mt-5 text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
-            Complete <span className="text-gradient">Pest Control</span> Solutions for Home & Office
+            Complete <span className="text-gradient">Pest Control</span> Solutions for <span className="text-destructive">Home & Office</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-muted-foreground">
             Gov't approved pest control with safe, no-smell treatments. Trusted by 50,000+ homes
-            across Hyderabad with long-term warranty.
+            across Vizianagaram with long-term warranty.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -156,7 +156,7 @@ function Hero() {
             className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2rem] border border-border shadow-elegant"
             style={{ transform: `translateY(${y * -0.05}px)` }}
           >
-            <img src={hero} alt="Professional pest control technician" className="h-full w-full object-cover" width={1600} height={1100} />
+            <img src={hero} alt="Professional pest control technician" className="h-full w-full object-cover" width={1600} height={1100} loading="eager" fetchPriority="high" decoding="async" />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-foreground/60 to-transparent p-5">
               <div className="glass rounded-2xl p-4">
                 <div className="flex items-center gap-2 text-xs font-semibold text-foreground">
@@ -210,7 +210,7 @@ function About() {
         <div className="reveal">
           <span className="text-sm font-bold uppercase tracking-wider text-primary">About Us</span>
           <h2 className="mt-3 text-3xl font-extrabold text-foreground md:text-4xl">
-            Hyderabad's most trusted name in <span className="text-gradient">pest control</span>
+            Vizianagaram's most <span className="text-destructive">trusted</span> name in <span className="text-gradient">pest control</span>
           </h2>
           <p className="mt-5 text-base text-muted-foreground">
             For over 15 years, National Pest Control of India has protected homes, offices and
@@ -260,7 +260,7 @@ function Services() {
         <div className="reveal mx-auto max-w-2xl text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-primary">Our Services</span>
           <h2 className="mt-3 text-3xl font-extrabold text-foreground md:text-4xl">
-            Premium pest control for every problem
+            Premium pest control for <span className="text-destructive">every problem</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
             Six specialized services. One trusted team. Backed by warranty.
@@ -308,7 +308,7 @@ function WhyUs() {
     { icon: Users, t: "Safe for Kids & Family", d: "Non-toxic, child & pet-friendly formulations." },
     { icon: BadgeCheck, t: "Long-Term Warranty", d: "Up to 10 years warranty on termite treatment." },
     { icon: Sparkles, t: "Affordable Pricing", d: "Transparent pricing with no hidden charges." },
-    { icon: Clock, t: "Fast Response Team", d: "Same-day service across Hyderabad." },
+    { icon: Clock, t: "Fast Response Team", d: "Same-day service across Vizianagaram." },
     { icon: Award, t: "Trained Technicians", d: "Background-verified, expert-level staff." },
     { icon: ThumbsUp, t: "100% Satisfaction", d: "Free re-treatment if issues recur." },
   ];
@@ -426,7 +426,7 @@ function EmergencyBanner() {
             <Clock className="h-3.5 w-3.5" /> SAME DAY SERVICE
           </div>
           <h2 className="mt-3 text-3xl font-extrabold text-primary-foreground md:text-4xl">
-            Need Urgent Pest Control?
+            Need <span className="text-[oklch(0.92_0.13_30)]">Urgent</span> Pest Control?
           </h2>
           <p className="mt-2 text-primary-foreground/85">
             Call now and our team will be at your doorstep today.
@@ -448,12 +448,12 @@ function EmergencyBanner() {
 /* ───────── Testimonials ───────── */
 function Testimonials() {
   const reviews = [
-    { name: "Priya Sharma", loc: "Banjara Hills", text: "Cockroach problem gone in one visit. Polite team and no smell at all. Highly recommend!" },
-    { name: "Rakesh Kumar", loc: "Gachibowli", text: "Got termite treatment with 7-year warranty. Very professional and reasonably priced." },
-    { name: "Anita Reddy", loc: "Madhapur", text: "Same-day service for bed bugs. They were thorough — finally a peaceful sleep!" },
-    { name: "Vikram Singh", loc: "Kondapur", text: "Used them for our office. Mosquito-free since 6 months. Excellent service quality." },
-    { name: "Sneha Patel", loc: "Hi-Tech City", text: "Friendly technicians, safe chemicals. Felt confident with kids around. Will book again." },
-    { name: "Arjun Rao", loc: "Kukatpally", text: "Best pest control in Hyderabad. Genuine warranty and follow-up. 5 stars!" },
+    { name: "Priya Sharma", loc: "Vizianagaram", text: "Cockroach problem gone in one visit. Polite team and no smell at all. Highly recommend!" },
+    { name: "Rakesh Kumar", loc: "Bobbili", text: "Got termite treatment with 7-year warranty. Very professional and reasonably priced." },
+    { name: "Anita Reddy", loc: "Parvathipuram", text: "Same-day service for bed bugs. They were thorough — finally a peaceful sleep!" },
+    { name: "Vikram Singh", loc: "Salur", text: "Used them for our office. Mosquito-free since 6 months. Excellent service quality." },
+    { name: "Sneha Patel", loc: "Srikakulam", text: "Friendly technicians, safe chemicals. Felt confident with kids around. Will book again." },
+    { name: "Arjun Rao", loc: "Visakhapatnam", text: "Best pest control in Vizianagaram. Genuine warranty and follow-up. 5 stars!" },
   ];
   return (
     <section className="bg-surface py-20 md:py-28">
@@ -494,7 +494,7 @@ function Testimonials() {
 
 /* ───────── Areas ───────── */
 function Areas() {
-  const areas = ["Hyderabad", "Secunderabad", "Banjara Hills", "Jubilee Hills", "Gachibowli", "Madhapur", "Kondapur", "Hi-Tech City", "Kukatpally", "Miyapur", "LB Nagar", "Uppal"];
+  const areas = ["Vizianagaram", "Bobbili", "Parvathipuram", "Salur", "Cheepurupalli", "Gajapathinagaram", "Nellimarla", "Srikakulam", "Visakhapatnam", "Anakapalle", "Vizag", "Kothavalasa"];
   const types = ["Residential", "Commercial", "Offices", "Apartments", "Restaurants", "Hospitals"];
   return (
     <section id="areas" className="relative overflow-hidden py-20 md:py-28">
@@ -503,7 +503,7 @@ function Areas() {
         <div className="reveal mx-auto max-w-2xl text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-primary">Coverage Areas</span>
           <h2 className="mt-3 text-3xl font-extrabold text-foreground md:text-4xl">
-            Serving Hyderabad & nearby areas
+            Serving Vizianagaram & nearby areas
           </h2>
         </div>
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
@@ -541,7 +541,7 @@ function FAQ() {
     { q: "Is pest control safe for children and pets?", a: "Absolutely. We use government-approved, odourless chemicals that are safe for children, pets and the elderly. There's no need to vacate the home." },
     { q: "How long does the treatment last?", a: "Most treatments are effective for 3–6 months. Termite treatment carries a long-term warranty of 5–10 years depending on the package." },
     { q: "Do you offer a warranty on termite treatment?", a: "Yes — we offer up to 10 years of warranty on anti-termite treatment with free re-visits if any activity is found." },
-    { q: "Is same-day service available?", a: "Yes. Call before 5 PM and we'll dispatch a technician the same day across Hyderabad and nearby areas." },
+    { q: "Is same-day service available?", a: "Yes. Call before 5 PM and we'll dispatch a technician the same day across Vizianagaram and nearby areas." },
     { q: "How often should I do pest control?", a: "For general pest control, we recommend a quarterly visit. Termite, bed bug and rodent treatments are scheduled per requirement." },
   ];
   const [open, setOpen] = useState<number | null>(0);
@@ -594,7 +594,7 @@ function Contact() {
         <div className="reveal">
           <span className="text-sm font-bold uppercase tracking-wider text-primary">Get In Touch</span>
           <h2 className="mt-3 text-3xl font-extrabold text-foreground md:text-4xl">
-            Book Today — Get Rid of Pests
+            Book Today — <span className="text-destructive">Get Rid of Pests</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
             Fill the form below and we'll connect on WhatsApp instantly. Or call us directly for

@@ -16,7 +16,7 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-4 max-w-xs text-sm text-primary-foreground/70">
-            Trusted pest control services across Hyderabad with safe, no-smell treatments and
+            Trusted pest control services across Vizianagaram with safe, no-smell treatments and
             long-term warranty.
           </p>
         </div>
@@ -78,7 +78,7 @@ export function Footer() {
                 <MessageCircle className="h-4 w-4" /> WhatsApp Support
               </a>
             </li>
-            <li className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Hyderabad & Nearby</li>
+            <li className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Vizianagaram & Nearby</li>
             <li className="flex items-center gap-2"><Mail className="h-4 w-4" /> Mon–Sun · 8 AM – 9 PM</li>
           </ul>
         </div>
@@ -86,7 +86,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-primary-foreground/60 sm:flex-row sm:px-6 lg:px-8">
           <p>© {new Date().getFullYear()} National Pest Control of India. All rights reserved.</p>
-          <p>Pest Control · Termite · Cockroach · Rat · Mosquito · Hyderabad</p>
+          <p>Pest Control · Termite · Cockroach · Rat · Mosquito · Vizianagaram</p>
         </div>
       </div>
     </footer>
