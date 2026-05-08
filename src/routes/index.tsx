@@ -448,12 +448,12 @@ function EmergencyBanner() {
 /* ───────── Testimonials ───────── */
 function Testimonials() {
   const reviews = [
-    { name: "Priya Sharma", loc: "Banjara Hills", text: "Cockroach problem gone in one visit. Polite team and no smell at all. Highly recommend!" },
-    { name: "Rakesh Kumar", loc: "Gachibowli", text: "Got termite treatment with 7-year warranty. Very professional and reasonably priced." },
-    { name: "Anita Reddy", loc: "Madhapur", text: "Same-day service for bed bugs. They were thorough — finally a peaceful sleep!" },
-    { name: "Vikram Singh", loc: "Kondapur", text: "Used them for our office. Mosquito-free since 6 months. Excellent service quality." },
-    { name: "Sneha Patel", loc: "Hi-Tech City", text: "Friendly technicians, safe chemicals. Felt confident with kids around. Will book again." },
-    { name: "Arjun Rao", loc: "Kukatpally", text: "Best pest control in Vizianagaram. Genuine warranty and follow-up. 5 stars!" },
+    { name: "Priya Sharma", loc: "Vizianagaram", text: "Cockroach problem gone in one visit. Polite team and no smell at all. Highly recommend!" },
+    { name: "Rakesh Kumar", loc: "Bobbili", text: "Got termite treatment with 7-year warranty. Very professional and reasonably priced." },
+    { name: "Anita Reddy", loc: "Parvathipuram", text: "Same-day service for bed bugs. They were thorough — finally a peaceful sleep!" },
+    { name: "Vikram Singh", loc: "Salur", text: "Used them for our office. Mosquito-free since 6 months. Excellent service quality." },
+    { name: "Sneha Patel", loc: "Srikakulam", text: "Friendly technicians, safe chemicals. Felt confident with kids around. Will book again." },
+    { name: "Arjun Rao", loc: "Visakhapatnam", text: "Best pest control in Vizianagaram. Genuine warranty and follow-up. 5 stars!" },
   ];
   return (
     <section className="bg-surface py-20 md:py-28">
