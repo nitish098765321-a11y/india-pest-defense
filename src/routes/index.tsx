@@ -426,7 +426,7 @@ function EmergencyBanner() {
             <Clock className="h-3.5 w-3.5" /> SAME DAY SERVICE
           </div>
           <h2 className="mt-3 text-3xl font-extrabold text-primary-foreground md:text-4xl">
-            Need Urgent Pest Control?
+            Need <span className="text-[oklch(0.92_0.13_30)]">Urgent</span> Pest Control?
           </h2>
           <p className="mt-2 text-primary-foreground/85">
             Call now and our team will be at your doorstep today.
