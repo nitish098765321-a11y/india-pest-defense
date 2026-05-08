@@ -156,7 +156,7 @@ function Hero() {
             className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2rem] border border-border shadow-elegant"
             style={{ transform: `translateY(${y * -0.05}px)` }}
           >
-            <img src={hero} alt="Professional pest control technician" className="h-full w-full object-cover" width={1600} height={1100} />
+            <img src={hero} alt="Professional pest control technician" className="h-full w-full object-cover" width={1600} height={1100} loading="eager" fetchPriority="high" decoding="async" />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-foreground/60 to-transparent p-5">
               <div className="glass rounded-2xl p-4">
                 <div className="flex items-center gap-2 text-xs font-semibold text-foreground">
