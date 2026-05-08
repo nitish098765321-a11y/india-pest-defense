@@ -118,7 +118,7 @@ function Hero() {
             <ShieldCheck className="h-3.5 w-3.5" /> Gov't Approved · ISO Certified
           </div>
           <h1 className="mt-5 text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
-            Complete <span className="text-gradient">Pest Control</span> Solutions for Home & Office
+            Complete <span className="text-gradient">Pest Control</span> Solutions for <span className="text-destructive">Home & Office</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-muted-foreground">
             Gov't approved pest control with safe, no-smell treatments. Trusted by 50,000+ homes
