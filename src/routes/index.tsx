@@ -260,7 +260,7 @@ function Services() {
         <div className="reveal mx-auto max-w-2xl text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-primary">Our Services</span>
           <h2 className="mt-3 text-3xl font-extrabold text-foreground md:text-4xl">
-            Premium pest control for every problem
+            Premium pest control for <span className="text-destructive">every problem</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
             Six specialized services. One trusted team. Backed by warranty.
