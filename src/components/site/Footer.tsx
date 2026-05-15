@@ -84,9 +84,36 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-primary-foreground/60 sm:flex-row sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-primary-foreground/60 sm:flex-row sm:px-6 lg:px-8">
           <p>© {new Date().getFullYear()} National Pest Control of India. All rights reserved.</p>
-          <p>Pest Control · Termite · Cockroach · Rat · Mosquito · Andhra Pradesh</p>
+          <div className="flex items-center gap-4">
+            <a href="/terms" className="hover:text-primary-foreground">Terms & Conditions</a>
+            <span className="hidden h-3 w-px bg-white/20 sm:inline-block" />
+            <p className="hidden sm:block">Pest Control · Andhra Pradesh</p>
+          </div>
+        </div>
+      </div>
+      <div className="border-t border-white/10 bg-black/30">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-2 px-4 py-4 text-center sm:flex-row sm:gap-3 sm:px-6 lg:px-8">
+          <span className="text-[11px] uppercase tracking-[0.25em] text-primary-foreground/50">
+            Crafted by
+          </span>
+          <a
+            href="https://sitecraftsman.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold text-primary-foreground/90 backdrop-blur transition hover:border-primary/60 hover:bg-primary/10 hover:text-primary-foreground"
+          >
+            <span className="grid h-5 w-5 place-items-center rounded-full bg-gradient-to-br from-primary to-primary/60 text-[10px] font-black text-primary-foreground">
+              S
+            </span>
+            <span className="tracking-wide">
+              Site<span className="text-primary">Craftsman</span>
+            </span>
+            <span className="text-primary-foreground/50 transition group-hover:text-primary-foreground/80">
+              · sitecraftsman.in
+            </span>
+          </a>
         </div>
       </div>
     </footer>
