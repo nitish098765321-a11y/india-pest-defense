@@ -24,13 +24,13 @@ import imgBedbug from "@/assets/bedbug.webp";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "National Pest Control of India | Gov't Approved Pest Control Vizianagaram" },
+      { title: "National Pest Control of India | Gov't Approved Pest Control Andhra Pradesh" },
       {
         name: "description",
         content:
-          "Gov't approved pest control in Vizianagaram. Safe, no-smell treatment for cockroach, termite, rat, mosquito, ant & bed bug. Same-day service. Long-term warranty.",
+          "Gov't approved pest control across Andhra Pradesh. Safe, no-smell treatment for cockroach, termite, rat, mosquito, ant & bed bug. Same-day service. Long-term warranty.",
       },
-      { property: "og:title", content: "National Pest Control of India — Vizianagaram" },
+      { property: "og:title", content: "National Pest Control of India — Andhra Pradesh" },
       {
         property: "og:description",
         content:
@@ -41,7 +41,7 @@ export const Route = createFileRoute("/")({
       {
         name: "keywords",
         content:
-          "pest control Vizianagaram, termite treatment Vizianagaram, cockroach control, residential pest control, commercial pest control, best pest control near me",
+          "pest control Andhra Pradesh, pest control Vizianagaram, pest control Visakhapatnam, pest control Vijayawada, termite treatment, cockroach control, residential pest control, commercial pest control, best pest control near me",
       },
     ],
     scripts: [
@@ -53,8 +53,8 @@ export const Route = createFileRoute("/")({
           name: "National Pest Control of India",
           image: "https://example.com/og.jpg",
           telephone: ["+91" + PHONE_PRIMARY, "+91" + PHONE_SECONDARY],
-          areaServed: "Vizianagaram",
-          address: { "@type": "PostalAddress", addressLocality: "Vizianagaram", addressCountry: "IN" },
+          areaServed: "Andhra Pradesh",
+          address: { "@type": "PostalAddress", addressRegion: "Andhra Pradesh", addressCountry: "IN" },
           priceRange: "₹₹",
           aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "1280" },
         }),
@@ -122,7 +122,7 @@ function Hero() {
           </h1>
           <p className="mt-5 max-w-xl text-lg text-muted-foreground">
             Gov't approved pest control with safe, no-smell treatments. Trusted by 50,000+ homes
-            across Vizianagaram with long-term warranty.
+            across Andhra Pradesh with long-term warranty.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -210,7 +210,7 @@ function About() {
         <div className="reveal">
           <span className="text-sm font-bold uppercase tracking-wider text-primary">About Us</span>
           <h2 className="mt-3 text-3xl font-extrabold text-foreground md:text-4xl">
-            Vizianagaram's most <span className="text-destructive">trusted</span> name in <span className="text-gradient">pest control</span>
+            Andhra Pradesh's most <span className="text-destructive">trusted</span> name in <span className="text-gradient">pest control</span>
           </h2>
           <p className="mt-5 text-base text-muted-foreground">
             For over 15 years, National Pest Control of India has protected homes, offices and
@@ -308,7 +308,7 @@ function WhyUs() {
     { icon: Users, t: "Safe for Kids & Family", d: "Non-toxic, child & pet-friendly formulations." },
     { icon: BadgeCheck, t: "Long-Term Warranty", d: "Up to 10 years warranty on termite treatment." },
     { icon: Sparkles, t: "Affordable Pricing", d: "Transparent pricing with no hidden charges." },
-    { icon: Clock, t: "Fast Response Team", d: "Same-day service across Vizianagaram." },
+    { icon: Clock, t: "Fast Response Team", d: "Same-day service across Andhra Pradesh." },
     { icon: Award, t: "Trained Technicians", d: "Background-verified, expert-level staff." },
     { icon: ThumbsUp, t: "100% Satisfaction", d: "Free re-treatment if issues recur." },
   ];
@@ -453,7 +453,7 @@ function Testimonials() {
     { name: "Anita Reddy", loc: "Parvathipuram", text: "Same-day service for bed bugs. They were thorough — finally a peaceful sleep!" },
     { name: "Vikram Singh", loc: "Salur", text: "Used them for our office. Mosquito-free since 6 months. Excellent service quality." },
     { name: "Sneha Patel", loc: "Srikakulam", text: "Friendly technicians, safe chemicals. Felt confident with kids around. Will book again." },
-    { name: "Arjun Rao", loc: "Visakhapatnam", text: "Best pest control in Vizianagaram. Genuine warranty and follow-up. 5 stars!" },
+    { name: "Arjun Rao", loc: "Visakhapatnam", text: "Best pest control in Andhra Pradesh. Genuine warranty and follow-up. 5 stars!" },
   ];
   return (
     <section className="bg-surface py-20 md:py-28">
@@ -494,7 +494,7 @@ function Testimonials() {
 
 /* ───────── Areas ───────── */
 function Areas() {
-  const areas = ["Vizianagaram", "Bobbili", "Parvathipuram", "Salur", "Cheepurupalli", "Gajapathinagaram", "Nellimarla", "Srikakulam", "Visakhapatnam", "Anakapalle", "Vizag", "Kothavalasa"];
+  const areas = ["Visakhapatnam", "Vijayawada", "Guntur", "Tirupati", "Rajahmundry", "Kakinada", "Nellore", "Kurnool", "Anantapur", "Kadapa", "Vizianagaram", "Srikakulam", "Eluru", "Ongole", "Chittoor", "Bhimavaram", "Machilipatnam", "Anakapalle", "Bobbili", "Parvathipuram"];
   const types = ["Residential", "Commercial", "Offices", "Apartments", "Restaurants", "Hospitals"];
   return (
     <section id="areas" className="relative overflow-hidden py-20 md:py-28">
@@ -503,7 +503,7 @@ function Areas() {
         <div className="reveal mx-auto max-w-2xl text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-primary">Coverage Areas</span>
           <h2 className="mt-3 text-3xl font-extrabold text-foreground md:text-4xl">
-            Serving Vizianagaram & nearby areas
+            Serving all over Andhra Pradesh
           </h2>
         </div>
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
@@ -541,7 +541,7 @@ function FAQ() {
     { q: "Is pest control safe for children and pets?", a: "Absolutely. We use government-approved, odourless chemicals that are safe for children, pets and the elderly. There's no need to vacate the home." },
     { q: "How long does the treatment last?", a: "Most treatments are effective for 3–6 months. Termite treatment carries a long-term warranty of 5–10 years depending on the package." },
     { q: "Do you offer a warranty on termite treatment?", a: "Yes — we offer up to 10 years of warranty on anti-termite treatment with free re-visits if any activity is found." },
-    { q: "Is same-day service available?", a: "Yes. Call before 5 PM and we'll dispatch a technician the same day across Vizianagaram and nearby areas." },
+    { q: "Is same-day service available?", a: "Yes. Call before 5 PM and we'll dispatch a technician the same day across most cities in Andhra Pradesh." },
     { q: "How often should I do pest control?", a: "For general pest control, we recommend a quarterly visit. Termite, bed bug and rodent treatments are scheduled per requirement." },
   ];
   const [open, setOpen] = useState<number | null>(0);

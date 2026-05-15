@@ -41,7 +41,7 @@ export function Header() {
             <Bug className="h-5 w-5 text-primary-foreground" />
           </div>
           <div className="leading-tight">
-            <div className="text-[15px] font-bold text-foreground">National Pest Control</div>
+            <div className="text-[15px] font-bold text-foreground">National Pest Control of India</div>
             <div className="text-[10px] font-medium uppercase tracking-wider text-success">
               Gov't Approved Service
             </div>
