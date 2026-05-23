@@ -23,11 +23,13 @@ import imgBedbug from "@/assets/bedbug.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
+    
     meta: [
      {
-    name: "google-site-verification",
-    content: "TPoXpLh-aMx8eEbcH6a0bFpaEzBembFEBOWSOpBn-l4",
-  },
+  name: "google-site-verification",
+  content: "TPoXpLh-aMx8eEbcH6a0bFpaEzBembFEBOWSOpBn-l4",
+},
+    
       { title: "National Pest Control of India | Gov't Approved Pest Control Andhra Pradesh" },
       {
         name: "description",
