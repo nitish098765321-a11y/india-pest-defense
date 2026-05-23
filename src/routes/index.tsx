@@ -22,34 +22,49 @@ import imgAnt from "@/assets/ant.webp";
 import imgBedbug from "@/assets/bedbug.webp";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    
-    meta: [
-     {
-  name: "google-site-verification",
-  content: "TPoXpLh-aMx8eEbcH6a0bFpaEzBembFEBOWSOpBn-l4",
-},
-    
-      { title: "National Pest Control of India | Gov't Approved Pest Control Andhra Pradesh" },
-      {
-        name: "description",
-        content:
-          "Gov't approved pest control across Andhra Pradesh. Safe, no-smell treatment for cockroach, termite, rat, mosquito, ant & bed bug. Same-day service. Long-term warranty.",
-      },
-      { property: "og:title", content: "National Pest Control of India — Andhra Pradesh" },
-      {
-        property: "og:description",
-        content:
-          "Premium pest control services with safe chemicals, verified experts and same-day booking. Call 8985740048.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      {
-        name: "keywords",
-        content:
-          "pest control Andhra Pradesh, pest control Vizianagaram, pest control Visakhapatnam, pest control Vijayawada, termite treatment, cockroach control, residential pest control, commercial pest control, best pest control near me",
-      },
-    ],
+head: () => ({
+  title: "National Pest Control of India | Gov't Approved Pest Control Andhra Pradesh",
+
+  meta: [
+    {
+      name: "google-site-verification",
+      content: "TPoXpLh-aMx8eEbcH6a0bFpaEzBembFEBOWSOpBn-l4",
+    },
+
+    {
+      name: "description",
+      content:
+        "Gov't approved pest control across Andhra Pradesh. Safe, no-smell treatment for cockroach, termite, rat, mosquito, ant & bed bug. Same-day service. Long-term warranty.",
+    },
+
+    {
+      property: "og:title",
+      content: "National Pest Control of India — Andhra Pradesh",
+    },
+
+    {
+      property: "og:description",
+      content:
+        "Premium pest control services with safe chemicals, verified experts and same-day booking. Call 8985740048.",
+    },
+
+    {
+      property: "og:type",
+      content: "website",
+    },
+
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+
+    {
+      name: "keywords",
+      content:
+        "pest control Andhra Pradesh, pest control Vizianagaram, pest control Visakhapatnam, pest control Vijayawada, termite treatment, cockroach control, residential pest control, commercial pest control, best pest control near me",
+    },
+  ],
+
     scripts: [
       {
         type: "application/ld+json",
